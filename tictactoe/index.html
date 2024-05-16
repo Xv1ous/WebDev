@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <h1>Tic Tac Toe</h1>
+        <ul class="nav-btn">
+          <li>Home</li>
+          <li>Game</li>
+          <li>Score</li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="player">
+          <ul class="select-player">
+            <li>
+              <input
+                type="button"
+                value="O"
+                id="select-o"
+                class="select-button"
+              />
+            </li>
+            <li>
+              <input
+                type="button"
+                value="X"
+                id="select-x"
+                class="select-button"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <div class="board">
+          <div class="grid">
+            <div class="cell" onclick="myFunction()"></div>
+            <div class="cell" onclick="myFunction()"></div>
+            <div class="cell" onclick="myFunction()"></div>
+            <div class="cell" onclick="myFunction()"></div>
+            <div class="cell" onclick="myFunction()"></div>
+            <div class="cell" onclick="myFunction()"></div>
+            <div class="cell" onclick="myFunction()"></div>
+            <div class="cell" onclick="myFunction()"></div>
+            <div class="cell" onclick="myFunction()"></div>
+          </div>
+        </div>
+        <div class="reset">
+        <input
+          type="button"
+          id="reset-button"
+          value="Reset"
+          class="reset-button"
+        />
+        </div>
+      </div>
+    </main>
+    <div class="popup" onclick="myFunction()">
+      Click me!
+      <span class="popuptext" id="myPopup">Popup text...</span>
+    </div>
+    <script src="script.js" async defer></script>
+  </body>
+</html>
